@@ -1,0 +1,328 @@
+/* Enable Smooth Scrolling for Navigation Links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset Defaults */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* Sticky Navigation Bar */
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #9c6965;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+}
+
+/* Global Table Layouts */
+.table-full {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.col-third {
+    width: 33.33%;
+    text-align: center;
+    vertical-align: top;
+    padding: 70px 10px;
+}
+
+.col-half {
+    width: 50%;
+    padding: 30px 20px;
+}
+
+/* Alignment Helpers */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.align-top { vertical-align: top; }
+.align-middle { vertical-align: middle; }
+
+.text-cell-padded {
+    padding: 60px 40px;
+}
+
+/* Hero Section */
+.section-hero {
+    background-color: #ffeeed;
+    padding-top: 20px;
+}
+
+.hero-text-cell {
+    padding-left: 10%;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.hero-title {
+    font-size: 80px;
+    color: rgb(122, 32, 32);
+    font-weight: normal;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.hero-img-cell {
+    text-align: center;
+    padding: 40px 0;
+    width: 50%;
+}
+
+.hero-img {
+    max-height: 500px;
+    width: auto;
+}
+
+/* Quicklinks Navigation Cards */
+.section-quicklinks {
+    background-color: #e8d5c3;
+    height: 180px;
+}
+
+.quicklink-card {
+    text-decoration: none;
+    display: block;
+}
+
+.quicklink-title {
+    font-size: 25px;
+    color: rgb(122, 32, 32);
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+}
+
+.quicklink-card:hover .quicklink-title {
+    transform: translateY(-3px);
+}
+
+/* Content Sections */
+.section-drawings {
+    background-color: #e8d5c3;
+    margin-top: 50px;
+}
+
+.section-header {
+    background-color: #4d2d25;
+    color: #ffffff;
+    font-size: 45px;
+    text-align: center;
+    height: 100px;
+    font-weight: bold;
+}
+
+.footer-row {
+    font-size: 25px;
+    height: 120px;
+}
+
+/* Content Text & Images */
+.content-heading {
+    font-size: 45px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.content-body {
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 550px;
+    margin-bottom: 20px;
+}
+
+/* Keeps right-aligned text blocks neatly aligned to the right edge */
+.body-align-right {
+    margin-left: auto;
+}
+
+.link-label {
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.pixiv-link {
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(114, 38, 38);
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+.content-img {
+    height: 450px;
+    width: auto;
+}
+
+/* Horizontal Dividers */
+.divider-dark {
+    border: none;
+    height: 3px;
+    background-color: #000000;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.divider-full {
+    border: none;
+    height: 2px;
+    background-color: #000000;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Image Gallery Layout */
+.gallery-container {
+    padding: 30px 10%;
+    text-align: center;
+}
+
+.gallery-heading {
+    font-size: 45px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.gallery-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.gallery-flex img {
+    width: 18%;
+    height: auto;
+    max-height: 500px;
+    border-radius: 4px;
+}
+
+/* Drawing Section Grid Layout */
+.grid-cell {
+    vertical-align: middle;
+}
+
+.drawing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.drawing-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Ordered Character List */
+.character-list {
+    font-size: 25px;
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+    padding-left: 25px;
+}
+
+/* Interactive Timers Section */
+.interactive-cell {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f7eee9;
+}
+
+.toggle-btn {
+    background-color: #4d2d25;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #7a2020;
+    transform: scale(1.03);
+}
+
+.timers-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.timers-wrapper.hidden {
+    display: none;
+}
+
+.timer-card {
+    background-color: #ffffff;
+    border: 2px solid #4d2d25;
+    border-radius: 12px;
+    padding: 25px 30px;
+    min-width: 320px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    flex: 1;
+    max-width: 500px;
+}
+
+.timer-card h3 {
+    color: rgb(122, 32, 32);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.timer-display {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333333;
+    font-family: 'Courier New', Courier, monospace;
+}

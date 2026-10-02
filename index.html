@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <!-- CSS Connection -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#nendoroids">Nendoroids</a>
+            <a href="#drawing">Drawing</a>
+            <a href="#chiikawa">Chiikawa</a>
+        </div>
+    </nav>
+
+    <!-- First Table (Introduction / Home Section) -->
+    <table id="home" class="table-full section-hero">
+        <tr>
+            <td class="hero-text-cell">
+                <h1 class="hero-title">My Hobbies</h1>
+                <p class="hero-subtitle">Absolute time wasters.</p>
+            </td>
+            <td class="hero-img-cell">
+                <img src="Images/one.png" alt="Hobbies Cover Image" class="hero-img">
+            </td>
+        </tr>
+    </table>
+
+    <!-- Second Table (Quick Navigation Cards) -->
+    <table class="table-full section-quicklinks">
+        <tr>
+            <td class="col-third">
+                <a href="#nendoroids" class="quicklink-card">
+                    <p class="quicklink-title">Nendoroids</p>
+                    <hr class="divider-dark">
+                </a>
+            </td>
+            <td class="col-third">
+                <a href="#drawing" class="quicklink-card">
+                    <p class="quicklink-title">Drawing</p>
+                    <hr class="divider-dark">
+                </a>
+            </td>
+            <td class="col-third">
+                <a href="#chiikawa" class="quicklink-card">
+                    <p class="quicklink-title">Chiikawa</p>
+                    <hr class="divider-dark">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Third Table (Nendoroids Section) -->
+    <table id="nendoroids" class="table-full section-content">
+        <tr class="section-header">
+            <td colspan="2">NENDOROIDS</td>
+        </tr>
+        <tr>
+            <td class="col-half text-center">
+                <img src="Images/two.png" alt="Arknights Nendoroids" class="content-img">
+            </td>
+            <td class="col-half align-middle text-left text-cell-padded">
+                <h2 class="content-heading">Arknights</h2>
+                <p class="content-body">
+                    I adore a specific set of characters from a game called Arknights. They also have a Nendoroid series which I've collected. I bring them with me whenever I go on a long trip.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><hr class="divider-full"></td>
+        </tr>
+        <tr>
+            <td class="col-half align-middle text-right text-cell-padded">
+                <h2 class="content-heading">The Journey</h2>
+                <p class="content-body body-align-right">
+                    And whenever there is a scenic view, I make sure to include them in a picture. It serves as alternative proof that I've been to this location before, as I don't like taking pictures of my own self.
+                </p>
+            </td>
+            <td class="col-half text-center">
+                <img src="Images/three.png" alt="Nendoroids Journey" class="content-img">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><hr class="divider-full"></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="gallery-container">
+                <h2 class="gallery-heading">Gallery</h2>
+                <div class="gallery-flex">
+                    <img src="Images/four.png" alt="Gallery Photo 1">
+                    <img src="Images/five.png" alt="Gallery Photo 2">
+                    <img src="Images/six.png" alt="Gallery Photo 3">
+                    <img src="Images/seven.png" alt="Gallery Photo 4">
+                    <img src="Images/eight.png" alt="Gallery Photo 5">
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Fourth Table (Drawing Section) -->
+    <table id="drawing" class="table-full section-drawings">
+        <tr class="section-header">
+            <td colspan="2">DRAWINGS</td>
+        </tr>
+        <tr>
+            <td class="col-half grid-cell">
+                <div class="drawing-grid">
+                    <img src="Images/nine.png" alt="Drawing 1">
+                    <img src="Images/ten.png" alt="Drawing 2">
+                    <img src="Images/eleven.png" alt="Drawing 3">
+                    <img src="Images/twelve.png" alt="Drawing 4">
+                </div>
+            </td>
+            <td class="col-half align-middle text-left text-cell-padded">
+                <h2 class="content-heading">Irasutoya</h2>
+                <p class="content-body">
+                    I have a Pixiv profile where I would occasionally post Irasutoya-style drawings of my favorite characters and sometimes other styles.
+                </p>
+                <p class="link-label">Here's the link to my Pixiv:</p>
+                <a href="https://www.pixiv.net/en/users/50270594" target="_blank" rel="noopener noreferrer" class="pixiv-link">
+                    https://www.pixiv.net/en/users/50270594
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Fifth Table (Chiikawa Section) -->
+    <table id="chiikawa" class="table-full section-content">
+        <tr class="section-header">
+            <td colspan="2">CHIIKAWA</td>
+        </tr>
+        <tr>
+            <td class="col-half align-middle text-right text-cell-padded">
+                <h2 class="content-heading">Top Characters</h2>
+                <ol class="character-list">
+                    <li>Chiikawa</li>
+                    <li>Hachiware</li>
+                    <li>Usagi</li>
+                </ol>
+            </td>
+            <td class="col-half text-center">
+                <img src="Images/fourteen.png" alt="Chiikawa Characters" class="content-img">
+            </td>
+        </tr>
+
+        <!-- Interactive Section -->
+        <tr>
+            <td colspan="2" class="interactive-cell">
+                <button id="toggle-timers-btn" class="toggle-btn">Surprise Timer</button>
+                
+                <div id="timers-container" class="timers-wrapper hidden">
+                    <div class="timer-card">
+                        <h3>Current Time</h3>
+                        <p id="live-clock" class="timer-display">00:00:00 AM</p>
+                    </div>
+
+                    <div class="timer-card">
+                        <h3>Usagi is on the way to your doorstep.</h3>
+                        <h3>You will die in</h3>
+                        <p id="event-countdown" class="timer-display">00 Days | 00 Hours | 00 Minutes | 00 Seconds</p>
+                        
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Footer Row -->
+        <tr class="section-header footer-row">
+            <td colspan="2">
+                This is a Footer.
+            </td>
+        </tr>
+    </table>
+
+    <!-- JavaScript Connection -->
+    <script src="script.js"></script>
+</body>
+</html>
